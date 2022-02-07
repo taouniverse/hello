@@ -1,0 +1,12 @@
+{
+  "tao": {
+    "log": {
+      "level": "info"
+    },
+    "hide_banner": true
+  },
+  "hello": {
+    "print": "hello guy!",
+    "times": 2
+  }
+}

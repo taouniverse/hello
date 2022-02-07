@@ -1,4 +1,4 @@
-// Copyright 2021
+// Copyright 2022 huija
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -11,23 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package main
 
-import (
-	"fmt"
-	"github.com/taouniverse/hello/flag"
+package flag
 
-	// before tao-hello's import to avoid it's default config
-	// ./conf/config.yaml should not be existed
-	//_ "github.com/taouniverse/hello/conf"
-	"github.com/taouniverse/tao"
-	_ "github.com/taouniverse/tao-hello"
-)
+import "flag"
 
-func main() {
-	fmt.Println("a flag is: ", *flag.A)
-	err := tao.Run(nil, nil)
-	if err != nil {
-		tao.Error(err)
-	}
+var A = new(string)
+
+func init() {
+	A = flag.String("a", "0", "config a flag")
 }

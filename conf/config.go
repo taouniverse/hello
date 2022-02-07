@@ -1,4 +1,4 @@
-// Copyright 2021
+// Copyright 2022
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -11,23 +11,30 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package main
+
+package conf
 
 import (
-	"fmt"
-	"github.com/taouniverse/hello/flag"
-
-	// before tao-hello's import to avoid it's default config
-	// ./conf/config.yaml should not be existed
-	//_ "github.com/taouniverse/hello/conf"
 	"github.com/taouniverse/tao"
-	_ "github.com/taouniverse/tao-hello"
 )
 
-func main() {
-	fmt.Println("a flag is: ", *flag.A)
-	err := tao.Run(nil, nil)
+func init() {
+	data := []byte(`
+{
+    "tao": {
+		"log": {
+		  "level": "debug"
+		},
+    	"hide_banner": true
+  	},
+    "hello": {
+        "print": "hello guy!",
+        "times": 2
+    }
+}
+`)
+	err := tao.SetConfigBytesAll(data, tao.Json)
 	if err != nil {
-		tao.Error(err)
+		tao.Panic(err)
 	}
 }

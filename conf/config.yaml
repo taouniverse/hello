@@ -1,5 +1,0 @@
-tao:
-  log_level: 1
-hello:
-  #print: hello tao
-  times: 2
