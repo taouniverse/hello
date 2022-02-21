@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-	//tao.DevelopMode()		// 2. default configs
+	//tao.DevelopMode() // 2. default configs
 	//tao.SetConfigPath("./conf/config_.yml") // 3. custom path
 
 	err := tao.Run(nil, nil)
