@@ -14,18 +14,15 @@
 package main
 
 import (
-	"fmt"
-	"github.com/taouniverse/hello/flag"
-
-	// before tao-hello's import to avoid it's default config
-	// ./conf/config.yaml should not be existed
-	//_ "github.com/taouniverse/hello/conf"
-	"github.com/taouniverse/tao"
+	//_ "github.com/taouniverse/hello/conf" // 1. code config
+	"github.com/taouniverse/tao" // 0. defaultConfig
 	_ "github.com/taouniverse/tao-hello"
 )
 
 func main() {
-	fmt.Println("a flag is: ", *flag.A)
+	//tao.DevelopMode()		// 2. default configs
+	//tao.SetConfigPath("./conf/config_.yml") // 3. custom path
+
 	err := tao.Run(nil, nil)
 	if err != nil {
 		tao.Error(err)

@@ -1,12 +1,13 @@
 {
   "tao": {
     "log": {
-      "level": "info"
+      "level": "debug",
+      "type": "console"
     },
     "hide_banner": true
   },
   "hello": {
-    "print": "hello guy!",
+    "print": "this is config_.json!",
     "times": 2
   }
 }

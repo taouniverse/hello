@@ -6,11 +6,10 @@ github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZN
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/taouniverse/tao v0.0.1/go.mod h1:SBKOGf189LJQenjuqnp1Qsb6FYgoryRCjOIRtFuw3fU=
-github.com/taouniverse/tao v0.0.3 h1:a49O9+QY1B+i4c0a8QIBuZX6zWK9CyTd0RITuRdEO9A=
-github.com/taouniverse/tao v0.0.3/go.mod h1:SBKOGf189LJQenjuqnp1Qsb6FYgoryRCjOIRtFuw3fU=
-github.com/taouniverse/tao-hello v0.0.2 h1:SkI0G08NMqyo0BfHGNjRVenoAz9UfI0REaO2CsgvhpQ=
-github.com/taouniverse/tao-hello v0.0.2/go.mod h1:AG2QZFg6ekRpdc16yUiCiy46etw1n/gXqB219o1uW7w=
+github.com/taouniverse/tao v0.0.4 h1:H2o/MNRGGC829OQ1HtrBQQ3M0fGIhr8SgOEgbNU7H/Y=
+github.com/taouniverse/tao v0.0.4/go.mod h1:SBKOGf189LJQenjuqnp1Qsb6FYgoryRCjOIRtFuw3fU=
+github.com/taouniverse/tao-hello v0.0.3 h1:6VU6Wmrhbe67jnIuRWjFB7SVPCE6nbMw0ZMOOE2h2oE=
+github.com/taouniverse/tao-hello v0.0.3/go.mod h1:hr7Id6AQm2XY7ySnBY0pgwGcW5WhR6DjrHDMzjrItyw=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=

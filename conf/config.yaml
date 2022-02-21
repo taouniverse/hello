@@ -1,0 +1,8 @@
+tao:
+  log:
+    level: "debug"
+    type: "console"
+  hide_banner: true
+hello:
+  "print": "this is config.yaml!"
+  "times": 1

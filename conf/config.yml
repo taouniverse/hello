@@ -1,7 +1,0 @@
-tao:
-  hide_banner: false
-  log:
-    level: "debug"
-hello:
-  "print": "hello guy!"
-  "times": 1

@@ -28,7 +28,7 @@ func init() {
     	"hide_banner": true
   	},
     "hello": {
-        "print": "hello guy!",
+        "print": "this is code config!",
         "times": 2
     }
 }
