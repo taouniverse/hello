@@ -33,7 +33,7 @@ func init() {
     }
 }
 `)
-	err := tao.SetConfigBytesAll(data, tao.Json)
+	err := tao.SetAllConfigBytes(data, tao.JSON)
 	if err != nil {
 		tao.Panic(err)
 	}
