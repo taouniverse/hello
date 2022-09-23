@@ -20,20 +20,16 @@ import (
 
 func init() {
 	data := []byte(`
-{
-    "tao": {
-		"log": {
-		  "level": "debug"
-		},
-    	"hide_banner": true
-  	},
-    "hello": {
-        "print": "this is code config!",
-        "times": 2
-    }
-}
+tao:
+  log:
+    level: debug
+  banner:
+    hide: true
+hello:
+  print: "this is code config!"
+  times: 2
 `)
-	err := tao.SetAllConfigBytes(data, tao.JSON)
+	err := tao.SetAllConfigBytes(data, tao.Yaml)
 	if err != nil {
 		tao.Panic(err)
 	}
