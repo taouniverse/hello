@@ -15,6 +15,8 @@ package main
 
 import (
 	//_ "github.com/taouniverse/hello/conf" // 1. code config
+	"context"
+
 	"github.com/taouniverse/tao" // 0. defaultConfig
 	_ "github.com/taouniverse/tao-hello"
 )
@@ -23,7 +25,7 @@ func main() {
 	//tao.DevelopMode() // 2. default configs
 	//tao.SetConfigPath("./conf/config_.yml") // 3. custom path
 
-	err := tao.Run(nil, nil)
+	err := tao.Run(context.Background(), nil)
 	if err != nil {
 		panic(err)
 	}
